@@ -56,7 +56,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: #E3E6F3;
+    background: pink;
     box-shadow: 0 5px 15px rgba(0,0,0, 0.06);
     z-index: 999;
 }
@@ -84,7 +84,7 @@ body {
 
 #navbar li a:hover, 
 #navbar li a.active {
-    color: pink;
+    color: rgb(185, 32, 58);
 }
 
 #navbar li a.active::after,
@@ -194,7 +194,7 @@ body {
 /*Footer*/
 
 .BA-footer {
-  background-color: #111;
+  background-color: pink;
   color: #ccc;
   padding: 60px 0 20px;
   font-size: 14px;
@@ -217,7 +217,7 @@ body {
 }
 
 .BA-footer-box h3 {
-  color: #fff;
+  color: rgb(219, 67, 92);
   margin-bottom: 15px;
   font-size: 18px;
 }
@@ -241,7 +241,7 @@ body {
 }
 
 .BA-footer-links a {
-  color: #ccc;
+  color: gray;
   text-decoration: none;
   transition: 0.3s;
 }
