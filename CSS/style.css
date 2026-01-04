@@ -46,7 +46,7 @@ body {
 }
 
 .logo{
-    width: 250px;
+    width: 130px;
 }
 
 /*Header*/
@@ -58,6 +58,7 @@ body {
     padding: 20px 80px;
     background: #E3E6F3;
     box-shadow: 0 5px 15px rgba(0,0,0, 0.06);
+    z-index: 999;
 }
 
 #navbar {
@@ -69,9 +70,11 @@ body {
 #navbar li {
     list-style: none;
     padding: 0 20px;
+    position: relative;
 }
 
 #navbar li a{
+    position: relative;
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
@@ -79,6 +82,95 @@ body {
     transition: 0.3s ease;
 }
 
-#navbar li a:hover {
+#navbar li a:hover, 
+#navbar li a.active {
     color: pink;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: rgb(219, 67, 92);
+    position: absolute;
+    bottom: -4px;
+    left: 10px;
+}
+
+/*Home*/
+
+#hero {
+    background-image: url(../img/BGimg.png);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4 {
+    padding-bottom: 15px;
+}
+
+#hero h1 {
+    color: rgb(219, 67, 92);
+}
+
+#hero button {
+    background-color: #c1121f; /* e kuqe premium */
+    color: #fff;
+    border: none;
+    padding: 14px 38px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    box-shadow: 0 10px 25px rgba(193, 18, 31, 0.35);
+}
+
+#hero button:hover {
+    background-color: #a50f1a;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(193, 18, 31, 0.45);
+}
+
+#feature {
+    display: flex
+    ;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 20px 20px 34px rgb(255, 198, 208);
+}
+
+#feature .fe-box h6{    
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: rgb(219, 67, 92);
+    background-color: #fddde4;
 }
