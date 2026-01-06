@@ -9,20 +9,30 @@
     <title>Document</title>
 </head>
 <body>
-    <section id="header">
-        <a href="#"><img src="../img/BA1.png" class="logo" alt=""></a>
+   <nav class="navbar navbar-expand-lg bg-light px-5">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="../img/BA1.png" class="logo" alt="">
+    </a>
 
-        <div>
-           <ul id="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="shop.html">Shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-            </ul>
-        </div>
-    </section>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
     <section id="product1" class="section-p1">
         <h2>Feature Product</h2>
