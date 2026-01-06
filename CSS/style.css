@@ -45,59 +45,60 @@ body {
     width: 100%;
 }
 
-.logo{
-    width: 130px;
-}
-
-/*Header*/
-
-#header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 80px;
-    background: pink;
-    box-shadow: 0 5px 15px rgba(0,0,0, 0.06);
+.navbar {
+    background-color: pink !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
     z-index: 999;
 }
 
-#navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.navbar .logo {
+    width: 130px;
 }
 
-#navbar li {
-    list-style: none;
-    padding: 0 20px;
+.navbar-nav .nav-link {
     position: relative;
-}
-
-#navbar li a{
-    position: relative;
-    text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    color: #1a1a1a;
+    color: #1a1a1a !important;
+    padding: 0 20px;
     transition: 0.3s ease;
+    text-align: center;
+    padding: 10px;
 }
 
-#navbar li a:hover, 
-#navbar li a.active {
-    color: rgb(185, 32, 58);
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: rgb(185, 32, 58) !important;
 }
 
-#navbar li a.active::after,
-#navbar li a:hover::after {
+.navbar-nav .nav-link::after {
     content: "";
-    width: 50%;
+    width: 0;
     height: 2px;
     background: rgb(219, 67, 92);
     position: absolute;
     bottom: -4px;
-    left: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s ease;
 }
 
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 50%;
+}
+
+.navbar-nav .nav-link i {
+    font-size: 18px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
 /*Home*/
 
 #hero {
