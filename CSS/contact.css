@@ -56,3 +56,98 @@ body {
 .navbar-toggler:focus {
     box-shadow: none;
 }
+
+/*Footer*/
+
+.BA-footer {
+  background-color: pink;
+  color: #ccc;
+  padding: 60px 0 20px;
+  font-size: 14px;
+}
+
+.BA-footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  padding: 0 40px;
+}
+
+.BA-footer-logo {
+  color: #c1121f;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.BA-footer-box h3 {
+  color: rgb(219, 67, 92);
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.BA-footer-text {
+  line-height: 1.8;
+}
+
+.BA-footer-box i {
+  color: #c1121f;
+  margin-right: 8px;
+}
+
+.BA-footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.BA-footer-links li {
+  margin-bottom: 10px;
+}
+
+.BA-footer-links a {
+  color: gray;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.BA-footer-links a:hover {
+  color: #c1121f;
+}
+
+.BA-footer-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.BA-footer-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.BA-footer-form button {
+  background-color: #c1121f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.BA-footer-form button:hover {
+  background-color: #a50f1a;
+}
+
+.BA-footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 40px;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 13px;
+}
