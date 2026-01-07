@@ -106,12 +106,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* SECTION */
 .about-section {
   background: linear-gradient(135deg, #fdfbfb, #ebedee);
 }
 
-/* TITLE */
 .about-title {
   font-size: 40px;
   font-weight: 700;

@@ -36,6 +36,57 @@
 </nav>
 
 
+<div class="container-fluid vh-100 d-flex justify-content-center align-items-center bg-dark">
+
+  <div class="auth-box row shadow-lg">
+
+
+    <div class="col-md-6 left-panel">
+      <img src="../img/logo.png" class="logo" alt="BAWear">
+      <h2>Welcome to BAWear</h2>
+      <p>Modern fashion. Everyday elegance.</p>
+
+      <button class="btn btn-outline-light mt-3" onclick="toggleForm()">
+        Switch to <span id="switchText">Sign In</span>
+      </button>
+    </div>
+
+    <div class="col-md-6 right-panel">
+
+      <form id="signupForm" class="form active">
+        <h3>Create Account</h3>
+
+        <input type="text" class="form-control" placeholder="Full Name">
+        <input type="email" id="signupEmail" class="form-control" placeholder="Email">
+        <small class="error" id="signupError"></small>
+
+        <input type="password" class="form-control" placeholder="Password">
+
+        <button type="button" class="btn btn-dark w-100 mt-3" onclick="validateSignup()">
+          Sign Up
+        </button>
+      </form>
+
+      <form id="signinForm" class="form">
+        <h3>Sign In</h3>
+
+        <input type="email" id="signinEmail" class="form-control" placeholder="Email">
+        <small class="error" id="signinError"></small>
+
+        <input type="password" class="form-control" placeholder="Password">
+
+        <button type="button" class="btn btn-dark w-100 mt-3" onclick="validateSignin()">
+          Sign In
+        </button>
+      </form>
+
+    </div>
+
+  </div>
+</div>
+
+<script src="contact.js"></script>
+
 
  <footer class="BA-footer">
         <div class="BA-footer-container">
