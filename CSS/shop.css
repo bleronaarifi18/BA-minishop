@@ -80,6 +80,7 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
+    margin: 20px;
 }
 
 #product1 .pro {
@@ -115,6 +116,12 @@ p {
     font-size: 16px;
     font-weight: 700;
     color: #1f6f54;
+}
+
+.fetchPrice {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1f6f54;
 }
 
 /* CART ICON */
