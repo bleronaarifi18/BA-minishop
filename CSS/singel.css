@@ -1,0 +1,30 @@
+body{
+  background-color:#f6f6f6;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.single-product{
+  min-height:100vh;
+}
+
+.product-img{
+  max-height:420px;
+  object-fit:contain;
+  transition:transform 0.3s ease;
+}
+
+.product-img:hover{
+  transform:scale(1.05);
+}
+
+.price{
+  font-size:32px;
+  font-weight:700;
+  color:#111;
+}
+
+@media(max-width:768px){
+  .product-img{
+    max-height:300px;
+  }
+}

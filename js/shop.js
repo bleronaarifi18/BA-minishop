@@ -36,11 +36,15 @@ fetch("https://fakestoreapi.com/products")
         blockCart.appendChild(creatingCartBlock);
         console.log(creatingCartBlock);
 
+    creatingCartBlock.addEventListener('click', () => {
+        window.location.href = `single.html?id=${product.id}`;
+    })
+
     createButton.addEventListener('click', () => {
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
         cart.push(product)
         localStorage.setItem("cart", JSON.stringify(cart))
-    })
+    }) 
 
     });
 });
