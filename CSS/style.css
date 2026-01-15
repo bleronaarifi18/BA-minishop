@@ -270,22 +270,111 @@ body {
 
 /* Responsive */
 
-@media (max-width: 350px) {
+@media (max-width: 576px) {
+
+    h1 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .section-p1 {
+        padding: 30px 20px;
+    }
+
+    .navbar .logo {
+        width: 100px;
+    }
+
     #hero {
         padding: 60px 20px;
         align-items: center;
         text-align: center;
+        background-position: center;
+    }
+
+    #hero button {
+        padding: 12px 28px;
+        font-size: 14px;
+    }
+
+    #feature {
+        justify-content: center;
+    }
+
+    #feature .fe-box {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .BA-footer-container {
+        padding: 0 20px;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .BA-footer-form {
+        flex-direction: column;
+    }
+
+    .BA-footer-form button {
+        width: 100%;
     }
 }
 
 @media (min-width: 577px) and (max-width: 992px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .section-p1 {
+        padding: 40px 40px;
+    }
+
+    #hero {
+        padding: 80px 40px;
+        background-position: center right;
+    }
+
     #feature {
         justify-content: center;
+        gap: 20px;
+    }
+
+    #feature .fe-box {
+        width: 220px;
+    }
+
+    .BA-footer-container {
+        padding: 0 30px;
+        gap: 35px;
     }
 }
 
 @media (min-width: 993px) {
+
     #hero {
         height: 90vh;
+    }
+
+    .section-p1 {
+        padding: 60px 80px;
+    }
+
+    #feature .fe-box {
+        width: 180px;
     }
 }

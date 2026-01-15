@@ -9,7 +9,33 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="single-product py-5">
+    <nav class="navbar navbar-expand-lg bg-light px-5">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="../img/BA1.png" class="logo" alt="">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="history.html">BrandHistory</a></li>
+            <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="SignInSignUp.html">Sign In / Sign Up</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="single-product py-5">
     <div class="container">
       <div class="row align-items-center bg-white shadow rounded-4 p-4">
 
@@ -44,6 +70,49 @@
       </div>
     </div>
   </section>
+
+<footer class="BA-footer">
+        <div class="BA-footer-container">
+            <div class="BA-footer-box">
+                <h2 class="BA-footer-logo">BA Wear</h2>
+                <p class="BA-footer-text">
+                    BA Wear është butik online për rroba moderne dhe cilësore,
+                    i fokusuar në stil, elegancë dhe komoditet.
+                </p>
+            </div>
+
+            <div class="BA-footer-box">
+                <h3>Contact</h3>
+                <p><i class="fa-solid fa-phone"></i> 049 228 740</p>
+                <p><i class="fa-solid fa-envelope"></i>blerona.arifi@umib.net</p>
+            </div>
+
+            <div class="BA-footer-box">
+                <h3>Quick Links</h3>
+                <ul class="BA-footer-links">
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="#">Cookies Policy</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+
+            <div class="BA-footer-box">
+                <h3>Newsletter</h3>
+                <p>Subscribe për oferta dhe produkte të reja</p>
+                <form class="BA-footer-form">
+                    <input type="email" placeholder="Email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+  <div class="BA-footer-bottom">
+    <p>© 2026 BA Wear – All Rights Reserved</p>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/singel.js"></script>
 </body>
 </html>

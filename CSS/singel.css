@@ -1,6 +1,61 @@
-body{
-  background-color:#f6f6f6;
-  font-family: 'Segoe UI', sans-serif;
+body {
+    width: 100%;
+    background: #f5f1eb;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: #0f3d2e !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    z-index: 999;
+}
+
+.navbar .logo {
+    width: 130px;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    color: #f5f1eb !important;
+    padding: 10px 20px;
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #c9a24d !important;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #c9a24d;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 50%;
+}
+
+.navbar-nav .nav-link i {
+    font-size: 18px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
 }
 
 .single-product{
@@ -27,4 +82,117 @@ body{
   .product-img{
     max-height:300px;
   }
+}
+
+.BA-footer {
+    background-color: #0f3d2e;
+    color: #e6e2dc;
+    padding: 60px 0 20px;
+    font-size: 14px;
+}
+
+.BA-footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    padding: 0 40px;
+}
+
+.BA-footer-logo {
+    color: #c9a24d;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.BA-footer-box h3 {
+    color: #c9a24d;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.BA-footer-text {
+    line-height: 1.8;
+    color: #e6e2dc;
+}
+
+.BA-footer-box i {
+    color: #c9a24d;
+    margin-right: 8px;
+}
+
+.BA-footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.BA-footer-links li {
+    margin-bottom: 10px;
+}
+
+.BA-footer-links a {
+    color: #e6e2dc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.BA-footer-links a:hover {
+    color: #c9a24d;
+}
+
+.BA-footer-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.BA-footer-form input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: #f5f1eb;
+    color: #0f3d2e;
+}
+
+.BA-footer-form button {
+    background-color: #c9a24d;
+    color: #0f3d2e;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.BA-footer-form button:hover {
+    background-color: #b8933f;
+}
+
+.BA-footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 13px;
+    color: #e6e2dc;
+}
+
+@media (max-width: 576px) {
+    .coming-soon h2 {
+        font-size: 30px;
+    }
+
+    .coming-soon .brand {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+    .coming-soon h2 {
+        font-size: 40px;
+    }
 }

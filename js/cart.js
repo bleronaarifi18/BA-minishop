@@ -6,7 +6,7 @@ cart.forEach(product => {
     item.classList.add("cart-item");
 
     let img = document.createElement("img");
-    img.src = product.image;
+    img.src = product.thumbnail;
 
     let title = document.createElement("h4");
     title.textContent = product.title;

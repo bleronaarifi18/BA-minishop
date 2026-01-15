@@ -1,21 +1,20 @@
-fetch("https://fakestoreapi.com/products")
+fetch("https://dummyjson.com/products/category/womens-dresses")
   .then(res => res.json())
-  .then(products => {
+  .then(data => {
 
-    const fourProducts = products.slice(16,20);
+    const fourProducts = data.products.slice(0,4);
+    const blockCart = document.querySelector('.pro-container');
 
     fourProducts.forEach(product => {
-        let blockCart = document.querySelector('.pro-container');
 
         let creatingCartBlock = document.createElement('div');
-        creatingCartBlock.classList.add('pro')
+        creatingCartBlock.classList.add('pro');
 
         let createImage = document.createElement('img');
-        createImage.src = product.image;
-        createImage.classList.add('E')
-    
-        let createTittle = document.createElement('h5');
-        createTittle.textContent = product.title;
+        createImage.src = product.thumbnail;
+
+        let createTitle = document.createElement('h5');
+        createTitle.textContent = product.title;
 
         let createBio = document.createElement('p');
         createBio.textContent = product.description.slice(0,30) + "...";
@@ -25,26 +24,32 @@ fetch("https://fakestoreapi.com/products")
         createPrice.classList.add('fetchPrice');
 
         let createButton = document.createElement('button');
-        createButton.innerHTML = '<i class="fa-solid fa-cart-shopping "></i>'
+        createButton.innerHTML = '<i class="fa-solid fa-cart-shopping"></i>';
         createButton.classList.add('cart');
 
-        creatingCartBlock.appendChild(createImage);
-        creatingCartBlock.appendChild(createTittle);
-        creatingCartBlock.appendChild(createBio);
-        creatingCartBlock.appendChild(createPrice);
-        creatingCartBlock.appendChild(createButton);
+        creatingCartBlock.append(
+          createImage,
+          createTitle,
+          createBio,
+          createPrice,
+          createButton
+        );
+
         blockCart.appendChild(creatingCartBlock);
-        console.log(creatingCartBlock);
 
-    creatingCartBlock.addEventListener('click', () => {
-        window.location.href = `single.html?id=${product.id}`;
-    })
+        // redirect single page
+        creatingCartBlock.addEventListener('click', () => {
+          window.location.href = `single.html?id=${product.id}`;
+        });
 
-    createButton.addEventListener('click', () => {
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
-        cart.push(product)
-        localStorage.setItem("cart", JSON.stringify(cart))
-    }) 
+        // add to cart
+        createButton.addEventListener('click', (e) => {
+          e.stopPropagation(); // mos me bo redirect
+          let cart = JSON.parse(localStorage.getItem('cart')) || [];
+          cart.push(product);
+          localStorage.setItem("cart", JSON.stringify(cart));
+        });
 
     });
-});
+  })
+  .catch(err => console.error(err));
