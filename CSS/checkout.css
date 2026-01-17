@@ -1,6 +1,53 @@
-body {
-    background-color: #08141272;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
 }
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #0f3d2e;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #0f3d2e;
+}
+
+h4 {
+    font-size: 20px;
+    color: #0f3d2e;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+    color: #0f3d2e;
+}
+
+p {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+    background: #f5f1eb;
+    font-family: 'Poppins', sans-serif;
+}
+
 .navbar {
     background-color: #0E1F1C !important;
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
@@ -74,4 +121,104 @@ body {
 
 .form-control::placeholder {
     color: #9aa7a0;
+}
+
+/*FOOTER*/
+
+.BA-footer {
+  background-color: #0f3d2e;
+  color: #f5f1eb;
+  padding: 60px 0 20px;
+  font-size: 14px;
+}
+
+.BA-footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  padding: 0 40px;
+}
+
+.BA-footer-box {
+  line-height: 1.8;
+}
+
+.BA-footer-logo {
+  color: #c9a24d;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.BA-footer-box h3 {
+  color: #c9a24d;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.BA-footer-text {
+  color: #e6e2dc;
+}
+
+.BA-footer-box i {
+  color: #c9a24d;
+  margin-right: 8px;
+}
+
+.BA-footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.BA-footer-links li {
+  margin-bottom: 10px;
+}
+
+.BA-footer-links a {
+  color: #e6e2dc;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.BA-footer-links a:hover {
+  color: #c9a24d;
+}
+
+.BA-footer-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.BA-footer-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.BA-footer-form button {
+  background-color: #c9a24d;
+  color: #0f3d2e;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.BA-footer-form button:hover {
+  background-color: #b8933f;
+}
+
+.BA-footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin-top: 40px;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #e6e2dc;
 }

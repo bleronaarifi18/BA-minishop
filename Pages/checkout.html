@@ -56,6 +56,51 @@
   </form>
 </div>
 
+<footer class="BA-footer">
+        <div class="BA-footer-container">
+
+
+            <div class="BA-footer-box">
+            <h2 class="BA-footer-logo">BA Wear</h2>
+            <p class="BA-footer-text">
+             BA Wear është butik online për rroba moderne dhe cilësore,
+             i fokusuar në stil, elegancë dhe komoditet...<a href="../Pages/history.html">view more</a>
+            </p>
+        </div>
+
+        <div class="BA-footer-box">
+            <h3>Contact</h3>
+            <p><i class="fa-solid fa-phone"></i> 049 228 740</p>
+            <p><i class="fa-solid fa-envelope"></i>blerona.arifi@umib.net</p>
+        </div>
+
+         <div class="BA-footer-box">
+            <h3>Quick Links</h3>
+            <ul class="BA-footer-links">
+                <li><a href="../Pages/faq.html">FAQ</a></li>
+                <li><a href="../Pages/terms.html">Terms of Service</a></li>
+                <li><a href="../Pages/about.html">About</a></li>
+                <li><a href="../Pages/history.html">BrandHistory</a></li>
+                <li><a href="../Pages/blog.html">Blog</a></li>
+            </ul>
+         </div>
+
+         <div class="BA-footer-box">
+            <h3>Newsletter</h3>
+            <p>Subscribe për oferta dhe produkte të reja</p>
+            <form class="BA-footer-form">
+                <input type="email" placeholder="Email address" required>
+                <button type="submit">SUB</button>
+            </form>
+    </div>
+
+  </div>
+
+  <div class="BA-footer-bottom">
+    <p>© 2026 BA Wear – All Rights Reserved</p>
+  </div>
+</footer>
+
 <script>
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 let total = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
