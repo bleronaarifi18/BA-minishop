@@ -48,6 +48,7 @@ getLoginForm.addEventListener('submit', function(e) {
     }
 
 })
+/*
 
 function closeForm() {
     let getLogedInfo = localStorage.getItem('isLogedIn');
@@ -59,3 +60,13 @@ function closeForm() {
     return;
 }
 closeForm();
+ */
+
+
+let groceries = ['milk', 'cocoa puffs', 'tea'];
+for (let i = 0; i < groceries.length; i++) {
+  console.log(groceries[i]);
+}
+
+let userName = 'blerona';
+console.log(userName.length);

@@ -65,15 +65,30 @@ p {
     width: 50%;
 }
 
-/* PRODUCTS */
+/*Products Section*/
+
 #product1 {
     text-align: center;
+    background: linear-gradient(180deg, #f5f1eb 0%, #ebe6dd 100%);
+    padding: 60px 0;
 }
 
 .TittleOfShop {
     margin: 30px 0;
     font-size: 42px;
     color: #0f3d2e;
+    animation: titleFade 1s ease forwards;
+}
+
+@keyframes titleFade {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .pro-container {
@@ -92,12 +107,15 @@ p {
     background-color: #ffffff;
     border: 1px solid #e0dcd6;
     box-shadow: 0 15px 30px rgba(0,0,0,0.06);
-    transition: 0.3s ease;
     position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s ease forwards;
+    transition: 0.3s ease;
 }
 
 #product1 .pro:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
     box-shadow: 0 20px 40px rgba(15, 61, 46, 0.25);
 }
 
@@ -106,6 +124,18 @@ p {
     height: 250px;
     object-fit: contain;
     border-radius: 15px;
+    transition: transform 0.4s ease;
+}
+
+#product1 .pro:hover img {
+    transform: scale(1.05);
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #product1 .ro h5 {
@@ -119,13 +149,17 @@ p {
     color: #1f6f54;
 }
 
-.fetchPrice {
-  font-size: 16px;
-  font-weight: 700;
-  color: #1f6f54;
+.star i {
+    color: #c9a24d;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* CART ICON */
+.pro:hover .star i {
+    transform: scale(1.15);
+    color: #b8933f;
+}
+
+/*CartIcon*/
 #product1 .cart {
     width: 40px;
     height: 40px;
@@ -137,10 +171,11 @@ p {
     position: absolute;
     bottom: 20px;
     right: 15px;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
-#product1 .cart:hover {
+#product1 .pro:hover .cart {
+    transform: scale(1.15);
     background-color: #c9a24d;
     color: #0f3d2e;
 }
@@ -244,5 +279,3 @@ p {
   font-size: 13px;
   color: #e6e2dc;
 }
-
-/*Responsive*/
