@@ -171,17 +171,12 @@ body {
     width: 44px;
 }
 
-@media(max-width:768px){
-  .product-img{
-    max-height:300px;
-  }
-}
-
 .BA-footer {
     background-color: #0f3d2e;
     color: #e6e2dc;
     padding: 60px 0 20px;
     font-size: 14px;
+    text-align: center;
 }
 
 .BA-footer-container {
@@ -290,6 +285,12 @@ body {
     .terms-body {
         max-height: none;
     }
+}
+
+@media(max-width:768px){
+  .product-img{
+    max-height:300px;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 992px) {

@@ -1,6 +1,7 @@
-const parms = new URLSearchParams(window.location.search);
+const parms = new URLSearchParams(window.location.search);//get id of fetch product
 const productId = parms.get("id");
 
+//fetch product with search id
 fetch(`https://dummyjson.com/products/${productId}`)
   .then(res => res.json())
   .then(product => {

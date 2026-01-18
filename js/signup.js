@@ -1,30 +1,35 @@
-let getForm = document.getElementById('signupForm');
+let getForm = document.getElementById('signupForm');//get html form
 
 getForm.addEventListener('submit', function(e) {
-    e.preventDefault();
+    e.preventDefault();//stop form refresh
 
+    //get form input Values
     let getNameAndSurname = document.getElementById('nameAndSurname').value;
     let getBirthDate = document.getElementById('birthDate').value;
     let getPhoneNumber = document.getElementById('phoneNumber').value;
     let getEmail = document.getElementById('signupEmail').value;
     let getPassCode = document.getElementById('passCode').value;
 
+    //validating inputs
     if(getNameAndSurname == '' || getBirthDate == '' || getPhoneNumber == '' || getEmail == '' || getPassCode == '') {
         alert('MBUSHNI FUSHAT');
         return;
     }
 
+    //validating email
     if(!getEmail.endsWith("@gmail.com")) {
         alert('patjeter duhet te perdorni gmail');
         return;
     }
 
+    //validating password
     if(getPassCode.length !== 6) {
         alert('password duhet te jet me 6 karaktere');
         console.log('password duhet te jet me 6 karaktere');
         return;
     }
 
+    //creating object to push in array
     let person = {
         nameAndSurname: getNameAndSurname,
         birthDate: getBirthDate,
@@ -33,11 +38,12 @@ getForm.addEventListener('submit', function(e) {
         password: getPassCode
     };
 
-
+    //creatin user array to save objects(person) in local stroage
     let allUsers = JSON.parse(localStorage.getItem('allUsers') || '[]');
     allUsers.push(person);
     localStorage.setItem('allUsers', JSON.stringify(allUsers));
 
+    //cleaning form
     document.getElementById('nameAndSurname').value = "";
     document.getElementById('birthDate').value = "";
     document.getElementById('phoneNumber').value = "";

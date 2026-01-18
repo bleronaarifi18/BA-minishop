@@ -1,6 +1,9 @@
+//get elements from local stroage
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 const getProductPossitions = document.getElementById('cartItems')
 
+
+//creating product section in cart
 cart.forEach(product => {
     let item = document.createElement("div");
     item.classList.add("cart-item");
@@ -21,14 +24,19 @@ cart.forEach(product => {
     cartItems.appendChild(item);
 });
 
+//after click in cart  is executed 
 window.onload = () => {
  
 };
 
+
+//if 0 products are in cart : cart is empty
 if (cart.length == 0) {
     getProductPossitions.innerHTML = `<p>Cart is empty</p>`
 }
 
+
+//total value
 let getTottal = document.getElementById('total');
 
 let total = 0;

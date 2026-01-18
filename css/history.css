@@ -105,9 +105,6 @@ body {
     box-shadow: none;
 }
 
-/* =====================
-   BRAND HISTORY SECTION
-===================== */
 .brand-story {
     background-color: #f5f1eb;
     padding: 60px 40px;
@@ -163,14 +160,13 @@ body {
     color: #0f3d2e;
 }
 
-/* =====================
-   FOOTER (LUXURY DARK)
-===================== */
+/*Footer*/
 .BA-footer {
     background-color: #0f3d2e;
     color: #e6e2dc;
     padding: 60px 0 20px;
     font-size: 14px;
+    text-align: center;
 }
 
 .BA-footer-container {

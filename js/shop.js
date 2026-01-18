@@ -1,10 +1,11 @@
-fetch("https://dummyjson.com/products/category/womens-dresses")
+fetch("https://dummyjson.com/products/category/womens-dresses")//fetch products
   .then(res => res.json())
   .then(data => {
-
+    //slice products
     const fourProducts = data.products.slice(0,4);
     const blockCart = document.querySelector('.pro-container');
 
+    //creating cards
     fourProducts.forEach(product => {
 
         let creatingCartBlock = document.createElement('div');

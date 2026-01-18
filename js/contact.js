@@ -1,3 +1,4 @@
+//form switch annimation
 function toggleForm() {
   let signUpForm = document.getElementById("signupForm");
   let logInForm = document.getElementById("signinForm");

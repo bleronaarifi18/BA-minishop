@@ -125,17 +125,12 @@ body {
   color:#111;
 }
 
-@media(max-width:768px){
-  .product-img{
-    max-height:300px;
-  }
-}
-
 .BA-footer {
     background-color: #0f3d2e;
     color: #e6e2dc;
     padding: 60px 0 20px;
     font-size: 14px;
+    text-align: center;
 }
 
 .BA-footer-container {
@@ -226,6 +221,12 @@ body {
     padding-top: 15px;
     font-size: 13px;
     color: #e6e2dc;
+}
+
+@media(max-width:768px){
+  .product-img{
+    max-height:300px;
+  }
 }
 
 @media (max-width: 576px) {

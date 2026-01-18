@@ -143,6 +143,7 @@ body {
 
 .video-section {
     text-align: center;
+    height: auto;
 }
 
 .video-box {
@@ -200,17 +201,12 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-    .about-title {
-        font-size: 30px;
-    }
-}
-
 .BA-footer {
     background-color: #0f3d2e;
     color: #e6e2dc;
     padding: 60px 0 20px;
     font-size: 14px;
+    text-align: center;
 }
 
 .BA-footer-container {
@@ -301,4 +297,10 @@ body {
     padding-top: 15px;
     font-size: 13px;
     color: #e6e2dc;
+}
+
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 30px;
+    }
 }
